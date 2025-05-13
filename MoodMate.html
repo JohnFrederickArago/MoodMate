@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodMate</title>
+    <link
+      rel="shortcut icon"
+      href="./img/moodmateLogo.png"
+      type="image/x-icon"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      df-messenger {
+        --df-messenger-bot-message: #fcb354;
+        --df-messenger-button-titlebar-color: #fcb354;
+        --df-messenger-chat-background-color: #fff;
+        --df-messenger-font-color: #fff;
+        --df-messenger-user-message: #64b5f8;
+        --df-messenger-send-icon: #fcb354;
+      }
+
+      body {
+        overflow: hidden;
+        background: url("./img/bg.png");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="./img/moodmatelogo.png"
+      intent="WELCOME"
+      chat-title="MoodMate"
+      agent-id="27ee6e37-6572-493a-88ad-1f6e947dfd18"
+      language-code="en"
+    ></df-messenger>
+  </body>
+</html>
